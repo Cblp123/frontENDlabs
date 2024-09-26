@@ -52,35 +52,39 @@
 
     <main>
         <div class="filters">
-            <button>
-                PDF
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11 1L1 11M1 1L11 11" stroke="white" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>     
-            </button>
-            <button>
-                DOC
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11 1L1 11M1 1L11 11" stroke="white" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                    
-            </button>
-            <button>
-                XLS
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11 1L1 11M1 1L11 11" stroke="white" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                    
-            </button>
-            <button>
-                PNG  
-            </button>
-            <select name="filter" id="filter-select">
-                <option value="По умолчанию">По умолчанию</option>
-                <option value="Сначала новые">Сначала новые</option>
-                <option value="Сначала старые">Сначала старые</option>
-            </select>
+            <div class="filters-buttons">
+                <button class="choice">
+                    PDF
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 1L1 11M1 1L11 11" stroke="white" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>     
+                </button>
+                <button class="choice">
+                    DOC
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 1L1 11M1 1L11 11" stroke="white" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                    
+                </button>
+                <button class="choice">
+                    XLS
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 1L1 11M1 1L11 11" stroke="white" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                    
+                </button>
+                <button class="not-choice">
+                    PNG  
+                </button>
+            </div>
+            <div class="filter-select">
+                <select name="filter">
+                    <option value="По умолчанию">По умолчанию</option>
+                    <option value="Сначала новые">Сначала новые</option>
+                    <option value="Сначала старые">Сначала старые</option>
+                </select>
+            </div> 
         </div>
         <div class="files">
-            <div class="file-pdf">
+            <div>
                 <svg width="112" height="112" viewBox="0 0 112 112" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M60.6666 9.33334H28C25.5246 9.33334 23.1506 10.3167 21.4003 12.067C19.65 13.8174 18.6666 16.1913 18.6666 18.6667V93.3333C18.6666 95.8087 19.65 98.1827 21.4003 99.933C23.1506 101.683 25.5246 102.667 28 102.667H84C86.4753 102.667 88.8493 101.683 90.5996 99.933C92.35 98.1827 93.3333 95.8087 93.3333 93.3333V42L60.6666 9.33334Z" fill="#D72F21"/>
                     <path opacity="0.3" d="M60.9766 9.5817V38.2484C60.9766 40.4575 62.7674 42.2484 64.9766 42.2484H93.6432" fill="white"/>
@@ -92,7 +96,7 @@
                 <p class="description-file-author">Создал: <span>Александр Пахомов</span></p>
                 <p class="description-file-edit">Последние изменения год назад</p>
             </div>
-            <div class="file-doc">
+            <div>
                 <svg width="112" height="112" viewBox="0 0 112 112" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M60.6666 9.33334H28C25.5246 9.33334 23.1506 10.3167 21.4003 12.067C19.65 13.8174 18.6666 16.1913 18.6666 18.6667V93.3333C18.6666 95.8087 19.65 98.1827 21.4003 99.933C23.1506 101.683 25.5246 102.667 28 102.667H84C86.4753 102.667 88.8493 101.683 90.5996 99.933C92.35 98.1827 93.3333 95.8087 93.3333 93.3333V42L60.6666 9.33334Z" fill="#175CD3"/>
                     <path opacity="0.3" d="M60.9766 9.5817V38.2484C60.9766 40.4575 62.7674 42.2484 64.9766 42.2484H93.6432" fill="white"/>
@@ -104,7 +108,7 @@
                 <p class="description-file-author">Создал: <span>Александр Пахомов</span></p>
                 <p class="description-file-edit">Последние изменения год назад</p>
             </div>
-            <div class="file-xls">
+            <div>
                 <svg width="112" height="112" viewBox="0 0 112 112" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M60.6667 9.33334H28C25.5247 9.33334 23.1507 10.3167 21.4004 12.067C19.65 13.8174 18.6667 16.1913 18.6667 18.6667V93.3334C18.6667 95.8087 19.65 98.1827 21.4004 99.933C23.1507 101.683 25.5247 102.667 28 102.667H84C86.4754 102.667 88.8493 101.683 90.5997 99.933C92.35 98.1827 93.3334 95.8087 93.3334 93.3334V42L60.6667 9.33334Z" fill="#049257"/>
                     <path opacity="0.3" d="M60.9766 9.5817V38.2484C60.9766 40.4575 62.7674 42.2484 64.9766 42.2484H93.6432" fill="white"/>
@@ -116,7 +120,7 @@
                 <p class="description-file-author">Создал: <span>Александр Пахомов</span></p>
                 <p class="description-file-edit">Последние изменения год назад</p>
             </div>
-            <div class="file-png">
+            <div>
                 <svg width="112" height="112" viewBox="0 0 112 112" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M60.6666 9.33333H28C25.5246 9.33333 23.1506 10.3167 21.4003 12.067C19.65 13.8173 18.6666 16.1913 18.6666 18.6667V93.3333C18.6666 95.8087 19.65 98.1827 21.4003 99.933C23.1506 101.683 25.5246 102.667 28 102.667H84C86.4753 102.667 88.8493 101.683 90.5996 99.933C92.35 98.1827 93.3333 95.8087 93.3333 93.3333V42L60.6666 9.33333Z" fill="#CB3798"/>
                     <path opacity="0.3" d="M60.9766 9.58171V38.2484C60.9766 40.4575 62.7674 42.2484 64.9766 42.2484H93.6432" fill="white"/>

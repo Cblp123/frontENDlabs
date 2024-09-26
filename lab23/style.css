@@ -1,6 +1,9 @@
 main{
     margin: 32px 160px;
 }
+body{
+    font-family: Inter;
+}
 .container-header{
     display: flex;
     height: 72px;
@@ -20,7 +23,6 @@ main{
     align-items: center;
 }
 .variant p{
-    font-family: Inter;
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
@@ -33,8 +35,6 @@ main{
     align-items: center;
 }
 .categories p{
-    
-    font-family: Inter;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -53,8 +53,36 @@ main{
 }
 .filters{
     display: flex;
-
+    justify-content: space-between;
+    
 }
-.
+.filters-buttons{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+
+.choice{
+    width: 92px;
+    height: 40px;
+    padding: 10px 16px 10px 16px;
+    gap: 8px;
+    border-radius: 8px;
+    opacity: 0px;
+    background-color: #0D1421;
+    border: none;
+    font-size: 14px;
+    color: white;
+}
+.not-choice{
+    width: 62px;
+    height: 40px;
+    padding: 10px 16px 10px 16px;
+    gap: 8px;
+    border-radius: 8px;
+    opacity: 0px;
+    border: 1px solid #EAECF0;
+    background-color: white;
+}
 
 
