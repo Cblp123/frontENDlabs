@@ -54,7 +54,7 @@ body{
 .filters{
     display: flex;
     justify-content: space-between;
-    
+    margin: 20px;
 }
 .filters-buttons{
     display: flex;
@@ -68,11 +68,11 @@ body{
     padding: 10px 16px 10px 16px;
     gap: 8px;
     border-radius: 8px;
-    opacity: 0px;
     background-color: #0D1421;
     border: none;
     font-size: 14px;
     color: white;
+    font-weight: 550;
 }
 .not-choice{
     width: 62px;
@@ -80,9 +80,54 @@ body{
     padding: 10px 16px 10px 16px;
     gap: 8px;
     border-radius: 8px;
-    opacity: 0px;
+    color: #354153;
+    font-weight: 550;
     border: 1px solid #EAECF0;
     background-color: white;
 }
+.filter-select{
+    width: 163px;
+    overflow: hidden;
+    padding-right: 0px;
+    background: url("images/downArrow.png") no-repeat right #fff;
+    background-position-x: calc(100% - 8px);
+}
+.options{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    appearance: none;
+    background: transparent;
+    border: 1px solid #EAECF0;
+    border-radius: 8px;
+    padding: 10px;
+    color: #354153;
+    font-weight: 550;
+}
+option{
+    color: #354153;
+    font-weight: 400;
+}
+.files{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.file{
+    border:  1px solid #EAECF0;
+    border-radius: 8px;
+    width: 500px;
+    display: flex;
+    margin: 20px 0px;
+    align-items: center;
 
-
+}
+.name-file {
+    font-size: 18px;
+}
+.description-file-author{
+    font-size: 14px;
+}
+.description-file-edit{
+    font-size: 14px;
+}
