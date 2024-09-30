@@ -3,6 +3,10 @@ main{
 }
 body{
     font-family: Inter;
+    margin: 0;
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh;
 }
 .container-header{
     display: flex;
@@ -127,7 +131,21 @@ option{
 }
 .description-file-author{
     font-size: 14px;
+    color: #667085;
 }
 .description-file-edit{
     font-size: 14px;
+    color: #667085;
 }
+.author{
+    color: #354153;
+}
+footer{
+    margin-top: auto; 
+}
+footer p{
+    padding: 50px 160px;
+    font-size: 16px;
+    color: #667085;
+}
+
