@@ -1,0 +1,87 @@
+body{
+    margin: 100px;
+    font-family: "Inter", sans-serif;
+    background-color: #EAECF0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 999px;
+    padding: 10px;
+}
+.categories{
+    min-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+}
+.variant{
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.icons {
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+.user{
+    padding: 10px;
+    border: 1px solid #f5d29daa;
+    border-radius: 999px;
+}
+.bag{
+    padding: 10px;
+    border: 1px solid #f5d29daa;
+    border-radius: 999px;
+}
+.category{
+    border: 1px solid #f5d29daa;
+    border-radius: 999px; 
+    padding: 10px;
+}
+main{
+    margin: 20px 0;
+}
+.all-items{
+    margin: 20px;
+    font-size: 30px;
+}
+.price{
+    font-size: 30px;
+    margin: 20px;
+
+}
+.discription{
+    font-size: 16px;
+    margin: 20px;
+
+}
+.articles{
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    margin-right: 20px;
+}
+.dropdown-toggle{
+    height: 40px;
+    width: 140px;
+    border-radius: 999px;
+    font-size: 16px;
+}

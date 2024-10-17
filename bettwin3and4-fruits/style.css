@@ -1,0 +1,120 @@
+
+html{
+    height: 100%;
+}
+body {
+    height: 100%;
+    display: grid;
+    grid-row: 3;
+    margin: 0;
+    font-family: "Jura", sans-serif;
+}
+header {
+    margin: 0 max(20px, 8.5%);
+    height: 160px;
+    display: grid;
+    grid-template-columns: 40%  60%;
+    align-items: center;
+    gap: 5px;
+}
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 130px;
+    align-items: center;
+    gap: 12px;
+}
+.title {
+    font-size: 24px;
+}
+.nav-element {
+    font-size: 20px;
+}
+.basket-name {
+    font-size: 14px;
+    text-align: center;
+}
+.basket {
+  
+    display: grid;
+    grid-template-columns: 65% 25%;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    color: #838383;
+    border: 1px solid #888888;
+    border-radius: 999px;
+}
+main {
+    margin: 0 max(20px, 8.5%);
+}
+.articles {
+    
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-content: space-between;
+    gap: 20px;
+}
+article {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+    aspect-ratio: 340 / 515;
+}
+.images {
+    position: relative;
+    display: inline-block;
+    aspect-ratio: 320 / 370;
+    width: 100%;
+}
+.fruit-img {
+    width: 100%;
+}
+.heart-icon {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 15px;
+    
+}
+.fruit-name {
+    font-size: 24px;
+}
+.price {
+    font-size: 24px;
+    color: #878787;
+    text-align: right;
+}
+.fruit-basket{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 60% 7%;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #888888;
+    border-radius: 999px;
+}
+.fruit-basket-name {
+    font-size: 18px;
+    color: #838383;
+    
+}
+.fruit-basket img {
+    align-self: right;
+}
+.price-name {
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+footer {
+    display: grid;
+    align-items: center;
+    margin-top: auto;
+    height: 80px;
+    text-align: center;
+    background-color: #EDEDED;
+    font-size: 24px;
+}
