@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dropdown">
+    <button class="dropdown-button" id="dropdownButton">Подобрать тариф</button>
+    <div class="dropdown-menu" id="dropdownMenu">
+        <label>
+            <input type="checkbox" name="service" value="1"> Услуга 1
+        </label>
+        <label>
+            <input type="checkbox" name="service" value="2"> Услуга 2
+        </label>
+        <label>
+            <input type="checkbox" name="service" value="3"> Услуга 3
+        </label>
+        <label>
+            <input type="checkbox" name="service" value="4"> Услуга 4
+        </label>
+        <label>
+            <input type="checkbox" name="service" value="5"> Услуга 5
+        </label>
+        <label>
+            <input type="checkbox" name="service" value="6"> Услуга 6
+        </label>
+        <label>
+            <input type="checkbox" name="service" value="7"> Услуга 7
+        </label>
+    </div>
+</div>
+
+<script>
+    const dropdownButton = document.getElementById('dropdownButton');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    dropdownButton.addEventListener('click', function() {
+        dropdownMenu.classList.toggle('open');
+    });
+
+    window.addEventListener('click', function(e) {
+        if (!dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+            dropdownMenu.classList.remove('open');
+        }
+    });
+</script>
+
+</body>
+</html>
