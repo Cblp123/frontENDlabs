@@ -100,6 +100,8 @@ body{
 .dropdown {
     position: relative;
     display: inline-block;
+    align-self: center;
+    align-items: right;
 }
 
 .dropdown-btn {
@@ -173,7 +175,7 @@ body{
 .file{
     border:  1px solid #EAECF0;
     border-radius: 8px;
-    width: min(500px, 100wh);
+    width: 500px;
     display: flex;
     margin: 20px 0px;
     align-items: center;
@@ -201,4 +203,21 @@ footer p{
     font-size: 16px;
     color: #667085;
 }
-
+@media (min-width: 768px) {
+    .var-categories .dropdown {
+       display: none;
+       width: 100vw;
+    }
+}
+@media (max-width: 768px) {
+    .categories {
+       display: none;
+    }
+    .user {
+        display: none;
+    }
+    .var-categories {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
