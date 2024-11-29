@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>продуктивность</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <header class="footer-container">
+        <button class="button-menu"></button>
+        
+        <div class="dropdown">
+            <button class="button-menu-swap">Ξ</button>
+            <div class="dropdown-content">
+              <a href="#">Home</a>
+              <a href="#">Blog</a>
+              <a href="#">Features</a>
+              <a href="#">Pricing</a>
+              <a href="#">Documentation</a>
+            </div>
+        </div>
+        <div class="categories-container">
+            <div class="menu">
+                
+                <div class="categories">
+                    <div style="color: #5E81FE;">Home</div>
+                    <div>Blog</div>
+                    <div>Features</div>
+                    <div>Pricing</div>
+                    <div>Documentation</div>
+                </div>
+            </div>
+        </div>
+        <div class="links-container">
+            <div class="links-logo">
+                <img src="images/twitter.svg" alt="f">
+                <img src="images/telegram.svg" alt="t">
+                <img src="images/facebook.svg" alt="x">
+                <img src="images/M.svg" alt="m">
+            </div>
+            <div>
+                <button class="button-start">
+                    Get started
+                </button>
+            </div>
+            
+        </div>
+        
+    </header>
+    <div class="title-container">
+        <div class="title-text">
+            <div class="title-plan">PLAN YOUR LIFE</div>
+            <div class="title-increase">Increase your <b>productivity</b></div>
+            <div class="title-description">
+                Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.
+            </div>
+            <form action="" target="_blank" class="title-form">
+                <button class="title-button"><img src="images/button.svg" alt=""></button>
+            </form>
+        </div>
+        
+        <div class="svg-graphic">
+            <svg  viewBox="0 0 1440 309" fill="" xmlns="http://www.w3.org/2000/svg">
+                <!-- Линия графика -->
+                <path d="M0 306.51C202.703 306.51 347.472 271.633 480.333 273.758C789.74 278.705 643.639 131.682 960.667 131.682C1305.86 131.682 1223.24 2 1441 2" class="chart-line" />
+                <!-- Определение градиента -->
+                <defs>
+                    <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#6B89F866" stop-opacity="0.8" />  <!-- Верхняя точка градиента -->
+                        <stop offset="100%" stop-color="#4B71FF00" stop-opacity="0.0" /> <!-- Нижняя точка градиента -->
+                    </linearGradient>
+                </defs>
+                
+                <!-- Градиентная область под графиком -->
+                <path d="M0 306.51C202.703 306.51 347.472 271.633 480.333 273.758C789.74 278.705 643.639 131.682 960.667 131.682C1305.86 131.682 1223.24 2 1441 2L1441 309L0 309Z" 
+                    fill="url(#chartGradient)" />
+                <!-- Точки на линии -->
+                <circle cx="220" cy="294" r="8" class="chart-point" data-tooltip="20%"/>
+                <circle cx="480" cy="274" r="8" class="chart-point" data-tooltip="40%" />
+                <circle cx="960" cy="132" r="8" class="chart-point" data-tooltip="60%" />
+                <circle cx="1223" cy="82" r="8" class="chart-point" data-tooltip="80%" />
+            </svg>
+        </div>
+        <div class="svg-graphic-swap">
+            <svg  viewBox="0 0 1440 309" fill="" xmlns="http://www.w3.org/2000/svg">
+                <!-- Линия графика -->
+                <path  d="M0 306.51C202.703 306.51 347.472 271.633 480.333 273.758C789.74 278.705 643.639 131.682 960.667 131.682C1305.86 131.682 1223.24 2 1441 2" class="chart-line"  />
+                <!-- Определение градиента -->
+                <defs>
+                    <linearGradient id="chartGradientSwap" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#6B89F866" stop-opacity="0.8" />  <!-- Верхняя точка градиента -->
+                        <stop offset="100%" stop-color="#4B71FF00" stop-opacity="0.0" /> <!-- Нижняя точка градиента -->
+                    </linearGradient>
+                </defs>
+                
+                <!-- Градиентная область под графиком -->
+                <path d="M0 306.51C202.703 306.51 347.472 271.633 480.333 273.758C789.74 278.705 643.639 131.682 960.667 131.682C1305.86 131.682 1223.24 2 1441 2L1441 309L0 309Z" 
+                    fill="url(#chartGradientSwap)" />
+                <!-- Точки на линии -->
+                <circle cx="220" cy="294" r="18" class="chart-point" data-tooltip="20%"/>
+                <circle cx="480" cy="274" r="18" class="chart-point" data-tooltip="40%" />
+                <circle cx="960" cy="132" r="18" class="chart-point" data-tooltip="60%" />
+                <circle cx="1223" cy="82" r="18" class="chart-point" data-tooltip="80%" />
+            </svg>
+        </div>
+
+        <!-- Элемент с информацией о скорости -->
+        <div class="tooltip" id="tooltip">
+            <img id="imgTooltip" src="" alt="Speed Icon">
+            <!-- <div id="tooltipText"></div> -->
+        </div>
+        
+    </div>
+    <div class="container-firma">
+        <div class="firma"><img src="images/bitbucket.png" alt="Bitbucket"></div>
+        <div class="firma"><img src="images/apple-watch.png" alt="WATCH"></div>
+        <div class="firma"><img src="images/facebook.png" alt="facebook"></div>
+        <div class="firma"><img src="images/atlassian.png" alt="Atlassian"></div>
+        <div class="firma"><img src="images/audi.png" alt="Audi"></div>
+    </div>
+    <div class="container-illustration">
+        <div class="left-illustration">
+            <div class="describe-illustration">
+                <div class="desktop-mobile-app">DESKTOP AND MOBILE APP</div>
+                <div class="plan-and-manage"><b>Plan</b> and <b>manage</b></div>
+                <div class="description-text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata. Solum patrioque no sea. Mea ex malis mollis oporteat. Eum an expetenda consequat.</div>
+            </div>
+            <div class="btns-illustration">
+                <button class="btn-veiw">View video ►</button>
+                <button class="btn-see">See features</button>
+            </div>
+        </div>
+        <div class="illustration"><img src="images/illustration.png" alt=""></div>
+    </div>
+    <div class="container-about-us">
+        <div class="about-us">About us</div>
+        <div class="read-about-us">Read about our app</div>
+        <div class="apps-about-us">
+            <div class="app">
+                <div class="app-icon"><img src="images/icons/overview.svg" alt=""></div>
+                <div class="app-title">Overview</div>
+                <div class="app-describe">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.</div>
+            </div>
+            <div class="app">
+                <div class="app-icon"><img src="images/icons/files.svg" alt=""></div>
+                <div class="app-title">Files</div>
+                <div class="app-describe">No vim nulla vitae intellegat. Ei enim error ius, solet atomorum conceptam ex has.</div>
+            </div>
+            <div class="app">
+                <div class="app-icon"><img src="images/icons/chat.svg" alt=""></div>
+                <div class="app-title">Meeting chats</div>
+                <div class="app-describe">Vim ne tacimates neglegentur. Erat diceret omittam at est.</div>
+            </div>
+            <div class="app">
+                <div class="app-icon"><img src="images/icons/save.svg" alt=""></div>
+                <div class="app-title">Save events</div>
+                <div class="app-describe"></div>
+            </div>
+        </div>
+        <div class="choice-buttons">
+            <button class="button-read">Read more</button>
+            <div class="div-or"> — OR — </div>
+            <button class="button-start"><b>Get started</b></button>
+        </div>
+    </div>
+    <div class="container-static">
+        <div class="procent-static">
+            <div class="static-icon"><img src="images/iconS/timer-icon.svg" alt=""></div>
+            <div class="static-title">89%</div>
+            <div class="static-describe">Customers who have increased their productivity</div>
+        </div>
+        <div class="count-static">
+            <div class="static-icon"><img src="images/iconS/users.svg" alt=""></div>
+            <div class="static-title">3123</div>
+            <div class="static-describe">Users who have used our application</div>
+        </div>
+    </div>
+    <div class="slider-container">
+        <button class="nav-btn prev-btn"><img src="images/arrow-prev.svg" alt=""></button>
+        <div class="slider">
+            
+            <div class="slide">
+                <div class="image-container">
+                    <img src="images/slider-trio.png" alt="">
+                </div>
+                <div class="content">
+                        <h2>How to start planning</h2>
+                        <p>
+                            Quidam vocibus eum ne, erat consectetur voluptatibus ut nam.
+                            Eu usu vidit tractatos, vero tractatos ius an...
+                        </p>
+                        <button class="read-btn">Read now</button>
+                        <button class="bookmark-btn">Add to your bookmarks</button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="image-container">
+                    <img src="images/slider-trio.png" alt="">
+                </div>
+                <div class="content">
+                        <h2>How to start planning</h2>
+                        <p>
+                            Quidam vocibus eum ne, erat consectetur voluptatibus ut nam.
+                            Eu usu vidit tractatos, vero tractatos ius an...
+                        </p>
+                        <button class="read-btn">Read now</button>
+                        <button class="bookmark-btn">Add to your bookmarks</button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="image-container">
+                    <img src="images/slider-trio.png" alt="">
+                </div>
+                <div class="content">
+                        <h2>How to start planning</h2>
+                        <p>
+                            Quidam vocibus eum ne, erat consectetur voluptatibus ut nam.
+                            Eu usu vidit tractatos, vero tractatos ius an...
+                        </p>
+                        <button class="read-btn">Read now</button>
+                        <button class="bookmark-btn">Add to your bookmarks</button>
+                </div>
+            </div> 
+        </div>
+        <button class="nav-btn next-btn"><img src="images/arrow-next.svg" alt=""></button>
+        
+        
+    </div>
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    
+    <div class="slider-customers">Slider customers</div>
+    <div class="hide-container">Hide container</div>
+    <div class="get-started-now">
+            <div class="get-started-plan">PLAN YOUR LIFE</div>
+            <div class="get-started-text">Get <b>started</b> now</div>
+            <div class="get-started-description">
+                Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.
+            </div>
+            <div class="get-started-buttons">
+                <button class="view">View pricing</button>
+                <button class="read">Read documentation</button>
+            </div>
+    </div>
+    <div class="form-sign-up">
+        <div class="sign-up-text">
+            <div class="sign-up-title">Sign up for newsletter</div>
+            <div class="sign-up-description">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero alterum.</div>
+        </div>
+        <button-form>
+            <input type="email" placeholder="      Email address">
+            <button class="button-save-me">Save me</button>
+        </button-form>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="copyright">
+                <div class="categories-container">
+                    <div class="menu">
+                        <button class="button-menu"></button>
+                        <button class="button-menu-swap">Ξ</button>
+                    </div>
+                    <div class="categories">
+                        <div>Home</div>
+                        <div>Blog</div>
+                        <div>Features</div>
+                        <div>Pricing</div>
+                        <div>Documentation</div>
+                    </div>
+                </div>
+                <div class="copyright">Copyright © 2018 by Random site</div>
+            </div>
+            
+            <div class="links-container">
+                <div class="links-logo">
+                    <img src="images/twitter.svg" alt="f">
+                    <img src="images/telegram.svg" alt="t">
+                    <img src="images/facebook.svg" alt="x">
+                    <img src="images/M.svg" alt="m">
+                </div>
+                <div>
+                    <button class="button-start">
+                        Get started
+                    </button>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </footer>
+    
+    </body>
+    <script src=script.js></script> 
+</html>
