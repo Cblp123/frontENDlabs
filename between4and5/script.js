@@ -91,3 +91,30 @@ dots.forEach((dot, index) => {
 
 // Initialize slider
 updateSlider();
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+accordionHeaders.forEach(header => {
+  header.addEventListener('click', () => {
+    const content = header.nextElementSibling;
+
+    // Раскрытие текущего элемента
+    header.classList.toggle('active');
+    if (header.classList.contains('active')) {
+      content.style.maxHeight = content.scrollHeight + 'px';
+      content.style.padding = '15px 20px';
+    } else {
+      content.style.maxHeight = '0';
+      content.style.padding = '0 20px';
+    }
+
+    // Закрытие остальных элементов
+    accordionHeaders.forEach(otherHeader => {
+      if (otherHeader !== header && otherHeader.classList.contains('active')) {
+        otherHeader.classList.remove('active');
+        const otherContent = otherHeader.nextElementSibling;
+        otherContent.style.maxHeight = '0';
+        otherContent.style.padding = '0 20px';
+      }
+    });
+  });
+});
