@@ -1,74 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Shop</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="categories">
-            <div class="category">Посуда</div>
-            <div class="category">Текстиль</div>
-            <div class="category">Товары для дома</div>
-        </div>
-        <div class="variant">
-            <div class="logo">
-                <img src="images/icon-variant.png" alt="">
-            </div>
-            Вариант 14
-        </div>
-        <div class="icons">
-            <div class="user"><img src="images/icon-user.png" alt="User"></div>
-            <div class="bag"><img src="images/icon-bag.png" alt="Bag"></div>
-        </div>
-    </header>
-    <main>
-        <div class="items">
-            <div class="all-items">Все товары</div>
-            <div class="articles">
-                <article class="item">
-                    <div class="picture"><img src="images/сумкасин.png" alt="товар"></div> 
-                    <div class="price">2 884 руб</div> 
-                    <div class="discription">Сумка мессенджер ДРЁМСЭКК</div>   
-                </article>
-                <article class="item">
-                    <div class="picture"><img src="images/сумка.png" alt="товар"></div> 
-                    <div class="price">2 884 руб</div> 
-                    <div class="discription">Сумка мессенджер ДРЁМСЭКК</div>   
-                </article>
-                <article class="item">
-                    <div class="picture"><img src="images/пледик.png" alt="товар"></div> 
-                    <div class="price">714 руб</div> 
-                    <div class="discription">Плед ВОРКРАГЕ</div>   
-                </article>
-            </div>
-        </div>
-        <div class="content"> 
-            <div class="dropdown"> 
-                <button class="dropdown-toggle"> 
-                    <span class="dropdown-label" >Фильтры</span> 
-                    
-                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"> 
-                        <path d="M1 1.5L6 6.5L11 1.5" stroke="#354153" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/> 
-                        </svg> 
-                         
-                </button> 
-                <div class="dropdown-menu"> 
-                    <div class="dropdown-item"><input type="checkbox" checked> <span class="menu-text">Услуга 1</span><br></div>   
-                    <div class="dropdown-item"><input type="checkbox" checked> <span class="menu-text">Услуга 2</span><br></div>   
-                    <div class="dropdown-item"><input type="checkbox" checked> <span class="menu-text">Услуга 3</span><br></div>   
-                    <div class="dropdown-item"><input type="checkbox" checked> <span class="menu-text">Услуга 4</span><br></div>   
-                    <div class="dropdown-item"><input type="checkbox" checked> <span class="menu-text">Услуга 5</span><br></div>   
-                    <div class="dropdown-item"><input type="checkbox" checked> <span class="menu-text">Услуга 6</span><br></div>   
-                </div> 
-            </div> 
-        </div>
-    </main>
-</body>
-
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>TASK JS AI-PI-22</title> 
+    <script src="main.js"></script>
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            background-color: #f7f8fa; 
+        } 
+ 
+       .hidden { 
+            opacity: 0; 
+            visibility: hidden; 
+        } 
+ 
+        .spinner  #loader { 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background-color: rgba(255, 255, 255,1); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            z-index: 1000; 
+            opacity: 1; 
+            visibility: visible; 
+            transition: opacity 0.5s ease, visibility 0.5s; 
+        } 
+ 
+        #loader{ 
+            width: 50px; 
+            height: 50px; 
+            border: 6px solid #ddd; 
+            border-top: 6px solid #333; 
+            border-radius: 50%; 
+            animation: spin 1s linear infinite; 
+        } 
+ 
+        @keyframes spin { 
+            0% { transform: rotate(0deg); } 
+            100% { transform: rotate(360deg); } 
+        } 
+ 
+        .dropdown { 
+            position: relative; 
+            display: inline-block; 
+            margin-top: 20px; 
+        } 
+ 
+        .dropdown-button { 
+            padding: 12px 20px; 
+            font-size: 16px; 
+            color: #333; 
+            background-color: #ffffff; 
+            border: 1px solid #ddd; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            min-width: 200px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            transition: all 0.3s ease; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        } 
+ 
+        .dropdown-content { 
+            display: none; 
+            position: absolute; 
+            top: 100%; 
+            left: 0; 
+            background-color: #ffffff; 
+            border: 1px solid #ddd; 
+            border-radius: 8px; 
+            margin-top: 8px; 
+            min-width: 100%; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            z-index: 1; 
+        } 
+ 
+        .show { 
+            display: block; 
+        } 
+ 
+        .cards { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            margin-top: 20px; 
+        } 
+ 
+        .card { 
+            background-color: #ffffff; 
+            border: 1px solid #ddd; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            padding: 20px; 
+            margin-bottom: 10px; 
+            width: 250px; 
+            text-align: center; 
+        } 
+    </style> 
+</head> 
+<body onload="loadData()"> 
+ 
+<div id="loader"> 
+    <div class="spinner"></div> 
+</div>  
+ 
+<div class="dropdown"> 
+    <button class="dropdown-button" onclick="toggleDropdown()" id="dropdownButton"> 
+        <span id="selectedOption">По умолчанию</span> 
+        <span>▼</span> 
+    </button> 
+    <div class="dropdown-content" id="dropdownMenu"> 
+        <a href="#" onclick="selectOption('По умолчанию')">По умолчанию</a> 
+        <a href="#" onclick="selectOption('Сначала новые')">Сначала новые</a> 
+        <a href="#" onclick="selectOption('Сначала старые')">Сначала старые</a> 
+    </div> 
+</div> 
+ 
+<div class="cards" id="cardsContainer"></div> 
+ 
+</body> 
+<script src=".//script.js"></script> 
 </html>

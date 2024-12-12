@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+header {
+  min-height: 105px;
+  background-color: #191919;
+  color: white;
+  padding: 0 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-categories a {
+  text-decoration: none;
+  color: white;
+}
+.header-categories {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.header-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+.header-categories a {
+  font-size: 18px;
+  font-weight: 800;
+}
+  
+  .main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+  }
+  
+  .footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .footer-content a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-content a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    background: #191919;
+    color: white;
+    padding: 70px;
+    /* text-align: center; */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 40px;
+    border-bottom: 1px solid #cecdcd;
+    padding-bottom: 20px;
+}
+.site {
+    text-align: left;
+    padding-top: 5px;
+    font-size: 12px;
+}
+.site-last-item {
+    color: #cecdcd;
+}
+.activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+.activities a{
+    color: #cecdcd;
+    text-decoration: none;
+    font-size: 16px;
+}
+.acts {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.activities .name {
+    text-align: left;
+    font-size: 24px;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contacts .name {
+    text-align: left;
+    font-size: 24px;
+}
+.address {
+    color: #cecdcd;
+}
+.site-last-item {
+    text-align: center;
+}
+.map {
+  border-radius: 8px;
+  padding: 50px 0;
+}
