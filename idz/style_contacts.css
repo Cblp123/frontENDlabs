@@ -142,8 +142,19 @@ header {
     text-align: left;
     font-size: 24px;
 }
+.contacts h2 {
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+.contacts p {
+  margin-bottom: 30px;
+}
+
 .address {
     color: #cecdcd;
+}
+.addresss {
+  color: #000;
 }
 .site-last-item {
     text-align: center;
@@ -151,4 +162,52 @@ header {
 .map {
   border-radius: 8px;
   padding: 50px 0;
+}
+.main {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.left-column, .right-column {
+  flex: 1;
+  margin: 10px;
+  min-width: 300px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.map {
+  text-align: center;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }

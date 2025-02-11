@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Антонио Вивальди. Времена года</title>
+    <link rel="stylesheet" href="style_concert.css">
+</head>
+<body>
+    <header>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script src="script.js"></script>
+        <div class="header-title">САЙТ КОНЦЕРТНО-ЭКСКУРСИОННЫХ ПРОГРАММ</div>
+        <div class="header-categories">
+            <a href="index_afisha.html">Афиша</a>
+            <div>◆</div>
+            <a href="index_afisha.html">Заказ билетов</a>
+            <div>◆</div>
+            <a href="index_contacts.html" style="text-decoration: none; color: white;">Контакты</a>
+            <div>◆</div>
+            <a href="#">История дворца</a>
+            <div href="#">◆</div>
+            <a href="#">Галерея</a>
+            <div>◆</div>
+            <a href="#">Планы залов</a>
+        </div>
+    </header>
+    <main class="main-container">
+        <div class="overlay" id="overlay">
+            <div class="modal">
+                <button class="close" onclick="closeModal()">&times;</button>
+                <h2>ЗАКАЗ БИЛЕТОВ</h2>
+                <label for="concert" style="font-size: 18px; color: #000;">Выберите концерт:</label>
+                <select id="concert" onchange="resetSelection(); showHall();">
+                    <option value="">Концерт</option>
+                    <option value="concert1">Антонио Вивальди. Времена года (2000₽)</option>
+                    <option value="concert2">Опера VS Оперетта (1500₽)</option>
+                    <option value="concert3">Ревизор (1000₽)</option>
+                    <option value="concert4">По щучьему велению (2500₽)</option>
+                    <option value="concert5">Маленький принц (500₽)</option>
+                </select>
+                <div class="hall" id="hall" style="display:none;"></div>
+                <div class="selected-seats" id="selected-seats">Выбранные места: нет</div>
+                <div class="total-price" id="total-price">Общая цена: 0₽</div>
+                <div class="email-input">
+                    <input type="email" id="email" placeholder="Введите вашу почту: example@gmail.com">
+                </div>
+                    <button class="btn" onclick="sendTickets()">Сформировать билеты</button>
+                </div>
+        </div>
+        <div class="main-title">Антонио Вивальди. Времена года</div>
+        <div class="content-container">
+            <div class="left-column">
+                <img src="images/vivaldi-vert.png" alt="">
+            </div>
+            <div class="right-column">
+                <div class="text-container">
+                    <div class="items">
+                        <div class="name">Санкт-Петербургский камерный оркестр Olympic Orchestra </div>
+                        <div class="item">Солистка - Надежда Троицкая (скрипка)</div>
+                        <div class="item">Дирижёр - Илья Филькенштейн</div>
+                        <div class="item">Художественный руководитель - Алексей Степанов</div>
+                        <div class="item">Музыка Вивальди на века!!! Изысканная роскошь, пышность и причудливая эстетика эпохи барокко в полной мере нашли воплощение в творчестве знаменитого венецианца Антонио Вивальди. Его называют «итальянским Бахом», и неспроста: за 63 года жизни музыкант написал около 800 произведений, включая оперы, хоровые произведения, более 500 концертов для различных инструментов и оркестра. Талантливый композитор-новатор, виртуозный скрипач, блестящий дирижер и педагог, он оставил после себя богатейшее творческое наследие. <br><br>В первом отделении прозвучит знаменитый цикл «Времена года» Антонио Вивальди, второе же отделение будет посвящено мелодичным серенадам для струнного оркестра Эдуарда Элгара и Петра Ильича Чайковского.</div>
+                    </div>
+                    <div class="items">
+                        <div class="name">Программа концерта</div>
+                        <div class="item">1 отделение</div>
+                        <div class="item">A. Вивальди «Времена года»:</div>
+                        <div class="item">Концерт № 1 ми мажор «Весна»</div>
+                        <div class="item">Концерт № 2 соль минор «Лето»</div>
+                        <div class="item">Концерт № 3 фа мажор «Осень»</div>
+                        <div class="item">Концерт № 4 фа минор «Зима»</div>
+                        <div class="item">2 отделение</div>
+                        <div class="item">Э. Элгар «Серенада для струнного оркестра»</div>
+                        <div class="item">П. Чайковский «Серенада для струнного оркестра»</div>
+                        <div class="item">2 отделение</div>
+                    </div>
+                    <div class="items">
+                        <div class="name">Стоимость билетов</div>
+                        <div class="item">500-2500 руб.</div>
+                    </div>
+                </div>
+                <button class="button-order" onclick="openModal()">Заказать билет</button>
+                <div class="container-images">
+                    <img src="images/vivaldi-horiz.png" alt="">
+                    <img src="images/vivaldi-horiz.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="site">САЙТ КОНЦЕРТНО-ЭКСКУРСИОННЫХ ПРОГРАММ</div>
+            <div class="activities">
+                <div class="name">Мероприятия</div>
+                <div class="acts">
+                    <a href="#">Экскурсии</a>
+                    <a href="#">Концерты</a>
+                    <a href="index_afisha.html">Афиша</a>
+                </div>
+            </div>
+            <div class="contacts">
+                <a href="index_contacts.html" class="name" style="text-decoration: none; color: white;">Контакты</a>
+                <div class="address">г. Санкт-Петербург, Невский пр., д. 1</div>
+                <div class="address">text@mail.ru</div>
+                <div class="address">(812) 123-45-67</div>
+            </div>
+        </div>
+        <div class="site-last-item">Сайт ко</div>
+    </footer>
+</body>
+</html>

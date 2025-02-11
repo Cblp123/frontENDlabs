@@ -13,6 +13,7 @@ fetch('cards.json')
 
 let tempTypes = ['xls', 'png', 'doc', 'pdf', 'txt', 'html']
 function Load_Data(){
+    
     setTimeout(() => {
         document.getElementById("loader").classList.add("hidden");
         displayCards(cardData);

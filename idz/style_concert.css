@@ -1,15 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-  }
-  
-  
-  body {
+}
+
+
+body {
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
     font-style: normal;
-  }
-  header {
+}
+header {
     min-height: 105px;
     background-color: #191919;
     color: white;
@@ -18,49 +18,33 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-  .header-categories a {
+}
+.header-categories a {
     text-decoration: none;
     color: white;
-  }
-  .header-categories {
+}
+.header-categories {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
-  }
-  .header-title {
+}
+.header-title {
     font-weight: 700;
     font-size: 16px;
-  }
-  .header-categories a {
+}
+.header-categories a {
     font-size: 18px;
     font-weight: 800;
-  }
-  .footer {
-    background-color: #111;
-    color: #fff;
-    padding: 20px 0;
-  }
-  
-  .footer-content {
+}
+.container-title {
+    padding: 30px 70px;
     display: flex;
-    justify-content: space-between;
-    max-width: 800px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-  
-  .footer-content a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer-content a:hover {
-    text-decoration: underline;
-  }
-  footer {
+    flex-direction: row;
+    gap: 30px;
+
+}
+footer {
     background: #191919;
     color: white;
     padding: 70px;
@@ -124,27 +108,65 @@
 .site-last-item {
     text-align: center;
 }
-.map {
-  border-radius: 8px;
-  padding: 50px 0;
-}
-.container-afisha {
-    padding: 40px 70px;
+
+.main-container {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 20px;
+    padding: 30px 70px;
 }
-.afisha-title {
+.main-title {
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.content-container {
+    display: grid;;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: space-between;
+}
+.container-images {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    gap: 20px;
 }
-.div-afisha {
-    font-size: 48px;
+.button-order {
+    width: 175px;
+    padding: 20px;
+    border: none;
+    border-radius: 999px;
+    background-color: #05B093;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.name {
+    font-size: 24px;
     font-weight: 600;
-    
+    color: #191919;
 }
-
+.item {
+    font-size: 16px;
+    color: #191919;
+}
 /* overlayyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy */
 .overlay {
     position: fixed;
@@ -303,80 +325,3 @@ select:hover {
     font-weight: 700;
 }
 /* overlayyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy */
-.container-scene {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 60px 0;
-}
-
-.scene {
-    border-radius: 8px;
-    background-color: #1919190D;
-    display: grid;
-    grid-template-columns: 1fr 2fr 3fr 1fr;
-    align-items: center;
-    padding: 20px 10px;
-}
-.image-scene {
-    width: 320px;
-    border-radius: 8px;
-}
-.date-scene {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-.day {
-    font-size: 64px;
-    color: #191919;
-    opacity: 0.7;
-    font-weight: 800;
-}
-.month {
-    font-size: 32px;
-    color: #191919;
-    opacity: 0.7;
-    font-weight: 800;
-}
-.button-order {
-    width: 175px;
-    padding: 20px;
-    border: none;
-    border-radius: 999px;
-    background-color: #05B093;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-}
-.description-scene {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.desc-title {
-    font-size: 32px;
-    color: #191919;
-    font-weight: 800;
-}
-.decs-poster {
-    font-size: 16px;
-    color: #191919;
-    opacity: 0.5;
-    font-weight: 800;
-}
-.desc-icons {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-.icon {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    align-items: center;
-    color: #191919;
-    opacity: 0.5;
-    font-weight: 800;
-}

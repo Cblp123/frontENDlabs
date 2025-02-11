@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jura:wght@300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jura:wght@300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> -->
     <title>Theather</title>
 </head>
 <body>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
     <header>
+        
         <div class="header-title">САЙТ КОНЦЕРТНО-ЭКСКУРСИОННЫХ ПРОГРАММ</div>
         <div class="header-categories">
             <a href="index_afisha.html">Афиша</a>
             <div>◆</div>
-            <a href="#">Заказ билетов</a>
+            <a href="index_afisha.html">Заказ билетов</a>
             <div>◆</div>
-            <a href="#">Контакты</a>
+            <a href="index_contacts.html" style="text-decoration: none; color: white;">Контакты</a>
             <div>◆</div>
             <a href="#">История дворца</a>
             <div href="#">◆</div>
@@ -46,10 +49,10 @@
         </div>
         <div class="container-afisha">
             <div class="afisha-title">
-                <div class="div-afisha">Афиша</div>
+                <div class="div-afisha"><a href="index_afisha.html" style="text-decoration: none; color: black;">Афиша</a></div>
                 <button class="button-afisha">
                     <img src="images/calendar.svg">
-                    <div>Все мероприятия</div>
+                    <div><a href="index_afisha.html" style="text-decoration: none; color: black;">Все мероприятия</a></div>
                 </button>
             </div>
             <div class="container-scene">
@@ -60,7 +63,7 @@
                     </div>
                     <img src="images/vivaldi-big.png" class="image-scene">
                     <div class="description-scene">
-                        <div class="desc-title">Антонио Вивальди. Времена года</div>
+                        <div class="desc-title"><a href="index_concert.html" style="text-decoration: none; color: black;">Антонио Вивальди. Времена года</a></div>
                         <div class="decs-poster">Посвящение Фрэнку Синатре.</div>
                         <div class="desc-icons">
                             <div class="icon">
@@ -77,7 +80,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="button-order">Заказать билет</button>
+                    <button class="button-order" onclick="openModal()">Заказать билет</button>
                 </div>
                 <div class="scene">
                     <div class="date-scene">
@@ -96,10 +99,32 @@
                         </div>
                     </div>
                     
-                    <button class="button-order">Заказать билет</button>
+                    <button class="button-order" onclick="openModal()">Заказать билет</button>
                 </div>
                 
             </div>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="modal">
+                <button class="close" onclick="closeModal()">&times;</button>
+                <h2>ЗАКАЗ БИЛЕТОВ</h2>
+                <label for="concert" style="font-size: 18px;">Выберите концерт:</label>
+                <select id="concert" onchange="resetSelection(); showHall();">
+                    <option value="">Концерт</option>
+                    <option value="concert1">Антонио Вивальди. Времена года (2000₽)</option>
+                    <option value="concert2">Опера VS Оперетта (1500₽)</option>
+                    <option value="concert3">Ревизор (1000₽)</option>
+                    <option value="concert4">По щучьему велению (2500₽)</option>
+                    <option value="concert5">Маленький принц (500₽)</option>
+                </select>
+                <div class="hall" id="hall" style="display:none;"></div>
+                <div class="selected-seats" id="selected-seats">Выбранные места: нет</div>
+                <div class="total-price" id="total-price">Общая цена: 0₽</div>
+                <div class="email-input">
+                    <input type="email" id="email" placeholder="Введите вашу почту: example@gmail.com">
+                </div>
+                    <button class="btn" onclick="sendTickets()">Сформировать билеты</button>
+                </div>
         </div>
         <div class="container-news">
             <div class="news">
@@ -237,7 +262,7 @@
                 </div>
             </div>
             <div class="contacts">
-                <a href="index_contacts.html" class="name">Контакты</a>
+                <a href="index_contacts.html" class="name" style="text-decoration: none; color: white;">Контакты</a>
                 <div class="address">г. Санкт-Петербург, Невский пр., д. 1</div>
                 <div class="address">text@mail.ru</div>
                 <div class="address">(812) 123-45-67</div>
